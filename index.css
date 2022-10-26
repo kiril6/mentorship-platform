@@ -1,0 +1,29 @@
+:root {
+  --lime-green: #79b473;
+  --dark-cyan-lime-green: #70a37f;
+  --dark-moderate-blue: #41658a;
+  --dark-blue: #414073;
+  --grayish-violet: #4c3957;
+}
+
+#par1 {
+  background-color: var(--lime-green);
+}
+#par2 {
+  background-color: var(--dark-cyan-lime-green);
+}
+#par3 {
+  background-color: var(--dark-moderate-blue);
+  margin: 16px 0;
+  color: white;
+}
+#par4 {
+  background-color: var(--dark-blue);
+  margin: 16px 0;
+  color: white;
+}
+#par5 {
+  background-color: var(--grayish-violet);
+  margin: 16px 0;
+  color: white;
+}
