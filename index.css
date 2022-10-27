@@ -1,29 +1,29 @@
 :root {
-  --lime-green: #79b473;
-  --dark-cyan-lime-green: #70a37f;
-  --dark-moderate-blue: #41658a;
-  --dark-blue: #414073;
-  --grayish-violet: #4c3957;
+  --green: green;
+  --lime: lime;
+  --dark-blue: darkblue;
+  --blue: blue;
+  --violet: violet;
 }
 
 #par1 {
-  background-color: var(--lime-green);
+  background-color: var(--green);
 }
 #par2 {
-  background-color: var(--dark-cyan-lime-green);
+  background-color: var(--lime);
 }
 #par3 {
-  background-color: var(--dark-moderate-blue);
-  margin: 16px 0;
-  color: white;
-}
-#par4 {
   background-color: var(--dark-blue);
   margin: 16px 0;
   color: white;
 }
+#par4 {
+  background-color: var(--blue);
+  margin: 16px 0;
+  color: white;
+}
 #par5 {
-  background-color: var(--grayish-violet);
+  background-color: var(--violet);
   margin: 16px 0;
   color: white;
 }
