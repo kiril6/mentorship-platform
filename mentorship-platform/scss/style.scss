@@ -1,0 +1,38 @@
+$green: green;
+$lime: lime;
+$dark-blue: darkblue;
+$blue: blue;
+$violet: violet;
+$white: white;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.green {
+  background-color: $green;
+}
+
+.lime {
+  background-color: $lime;
+}
+
+.darkblue {
+  background-color: $dark-blue;
+  margin: 16px 0;
+  color: $white;
+}
+
+.blue {
+  background-color: $blue;
+  margin: 16px 0;
+  color: $white;
+}
+
+.violet {
+  background-color: $violet;
+  margin: 16px 0;
+  color: $white;
+}

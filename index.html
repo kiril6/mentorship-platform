@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="mentorship-platform/css/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Mentorship Platform</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <!-- define symbol in hidden svg document -->
+      <svg version="2.0" display="none">
+        <defs>
+          <symbol
+            id="arrow-up-right"
+            viewbox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-corner-up-right"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M6 18v-6a3 3 0 0 1 3 -3h10l-4 -4m0 8l4 -4"></path>
+          </symbol>
+        </defs>
+        <use href="#arrow-up-right" />
+      </svg>
+
+      <p class="blue">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-corner-up-right"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M6 18v-6a3 3 0 0 1 3 -3h10l-4 -4m0 8l4 -4"></path>
+        </svg>
+        This is a svg element used with svg code in HTML.
+      </p>
+      <p class="lime">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-corner-down-right"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M6 6v6a3 3 0 0 0 3 3h10l-4 -4m0 8l4 -4"></path>
+        </svg>
+        Another paragraph with different svg.
+      </p>
+      <div>
+        <svg width="24" height="24" version="2.0">
+          <use href="#arrow-up-right" />
+        </svg>
+        <span class="dark-blue">This is code reusage.</span>
+      </div>
+      <div class="blue">
+        <img src="./mentorship-platform/assets/arrow-up-right.png" alt="arrow up right" />
+        <span>This is externaly imported svg in html as .png file</span>
+      </div>
+      <div class="violet">This is just some text</div>
+    </div>
+  </body>
+</html>
