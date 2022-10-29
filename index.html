@@ -38,72 +38,94 @@
         <use href="#arrow-up-right" />
       </svg>
 
-      <heading>
-        <h2 class="sections">
-          In this section are some examples for using color variables,
-          implementing
-          <a href="https://tabler-icons.io/">Tabler Icons </a> (<code>SVG</code>
-          element) and the usage of HTML semantics
+      <section class="sections">
+        <heading>
+          <h2 class="heading">
+            In this section are some examples for using color variables,
+            implementing
+            <a href="https://tabler-icons.io/">Tabler Icons </a> (<code
+              >SVG</code
+            >
+            element) and the usage of HTML semantics
+          </h2>
+        </heading>
+        <article class="green article">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-corner-up-right"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M6 18v-6a3 3 0 0 1 3 -3h10l-4 -4m0 8l4 -4"></path>
+          </svg>
+          This is a svg element used with svg code in HTML.
+        </article>
+        <article class="lime article">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-corner-down-right"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M6 6v6a3 3 0 0 0 3 3h10l-4 -4m0 8l4 -4"></path>
+          </svg>
+          Another paragraph with different svg.
+        </article>
+        <article class="article">
+          <svg width="24" height="24" version="2.0">
+            <use href="#arrow-up-right" />
+          </svg>
+          <span class="darkblue"
+            >This is a SVG element displayed with using
+            <code> defs </code> element.</span
+          >
+        </article>
+        <article class="blue article">
+          <img
+            src="./mentorship-platform/assets/arrow-up-right.png"
+            alt="arrow up right"
+          />
+          <span>This is externaly imported svg in html as .png file</span>
+        </article>
+        <article class="violet article">This is just some text</article>
+        <summary class="summarys">
+          In the text above are few examples of how can a SVG element be
+          incorporated in HTML.
+        </summary>
+      </section>
+      <section class="sections">
+        <h2 class="heading">
+          In the section below are few examples of styled buttons
         </h2>
-      </heading>
-
-      <article class="green article">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="icon icon-tabler icon-tabler-corner-up-right"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          stroke-width="2"
-          stroke="currentColor"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-          <path d="M6 18v-6a3 3 0 0 1 3 -3h10l-4 -4m0 8l4 -4"></path>
-        </svg>
-        This is a svg element used with svg code in HTML.
-      </article>
-      <article class="lime article">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="icon icon-tabler icon-tabler-corner-down-right"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          stroke-width="2"
-          stroke="currentColor"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-          <path d="M6 6v6a3 3 0 0 0 3 3h10l-4 -4m0 8l4 -4"></path>
-        </svg>
-        Another paragraph with different svg.
-      </article>
-      <article class="article">
-        <svg width="24" height="24" version="2.0">
-          <use href="#arrow-up-right" />
-        </svg>
-        <span class="darkblue"
-          >This is a SVG element displayed with using
-          <code> defs </code> element.</span
-        >
-      </article>
-      <article class="blue article">
-        <img
-          src="./mentorship-platform/assets/arrow-up-right.png"
-          alt="arrow up right"
-        />
-        <span>This is externaly imported svg in html as .png file</span>
-      </article>
-      <article class="violet article">This is just some text</article>
-      <summary class="summarys">
-        In the text above are few examples of how can a SVG element be
-        incorporated in HTML.
-      </summary>
+        <div class="flex-container">
+          <button class="button button--filled">Filled button</button>
+          <button class="button button--outlined">Outlined button</button>
+          <button class="button button--active">Active button</button>
+          <button class="button button--hover">Hover button</button>
+          <button class="button button--inactive" disabled>
+            Inactive button
+          </button>
+          <button class="button button--default">Default button</button>
+          <button class="button button--rounded--little">Rounded button</button>
+          <button class="button button--rounded--very">
+            Very rounded button
+          </button>
+        </div>
+      </section>
     </div>
   </body>
 </html>

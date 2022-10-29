@@ -12,7 +12,7 @@ $background-color: rgba(52, 205, 205, 0.2);
   padding: 0;
 }
 
-.sections {
+.heading {
   margin: 30px;
   padding: 30px;
   text-align: center;
@@ -22,6 +22,7 @@ $background-color: rgba(52, 205, 205, 0.2);
 .green {
   background-color: $green;
   margin: 16px 0;
+  color: $white;
 }
 
 .lime {
@@ -44,15 +45,60 @@ $background-color: rgba(52, 205, 205, 0.2);
 .violet {
   background-color: $violet;
   margin: 16px 0;
-  color: $white;
 }
 
-.summarys {
+.sections {
   margin: 24px 5px;
   padding: 30;
+  border: 1px solid;
 }
 
 .article {
   padding: 5px;
   margin: 20px;
+}
+
+.button {
+  margin: 5px;
+  padding: 5px;
+}
+
+.button--filled {
+  background-color: $background-color;
+}
+
+.button--outlined {
+  border-color: $green;
+}
+
+.button--active {
+  background-color: $lime;
+  color: $white;
+}
+
+.button--hover:hover {
+  background-color: $lime;
+  color: $white;
+}
+
+.button--inactive:disabled {
+  color: $violet;
+}
+
+.button--default {
+  border-radius: 0px;
+}
+
+.button--rounded--little {
+  border-radius: 5px;
+}
+
+.button--rounded--very {
+  border-radius: 15px;
+}
+
+.flex-container {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
 }
