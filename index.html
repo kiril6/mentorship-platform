@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="mentorship-platform/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="mentorship-platform/css/style.css"
+    />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
@@ -34,7 +38,16 @@
         <use href="#arrow-up-right" />
       </svg>
 
-      <p class="blue">
+      <heading>
+        <h2 class="sections">
+          In this section are some examples for using color variables,
+          implementing
+          <a href="https://tabler-icons.io/">Tabler Icons </a> (<code>SVG</code>
+          element) and the usage of HTML semantics
+        </h2>
+      </heading>
+
+      <article class="green article">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-corner-up-right"
@@ -51,8 +64,8 @@
           <path d="M6 18v-6a3 3 0 0 1 3 -3h10l-4 -4m0 8l4 -4"></path>
         </svg>
         This is a svg element used with svg code in HTML.
-      </p>
-      <p class="lime">
+      </article>
+      <article class="lime article">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-corner-down-right"
@@ -69,18 +82,28 @@
           <path d="M6 6v6a3 3 0 0 0 3 3h10l-4 -4m0 8l4 -4"></path>
         </svg>
         Another paragraph with different svg.
-      </p>
-      <div>
+      </article>
+      <article class="article">
         <svg width="24" height="24" version="2.0">
           <use href="#arrow-up-right" />
         </svg>
-        <span class="dark-blue">This is code reusage.</span>
-      </div>
-      <div class="blue">
-        <img src="./mentorship-platform/assets/arrow-up-right.png" alt="arrow up right" />
+        <span class="darkblue"
+          >This is a SVG element displayed with using
+          <code> defs </code> element.</span
+        >
+      </article>
+      <article class="blue article">
+        <img
+          src="./mentorship-platform/assets/arrow-up-right.png"
+          alt="arrow up right"
+        />
         <span>This is externaly imported svg in html as .png file</span>
-      </div>
-      <div class="violet">This is just some text</div>
+      </article>
+      <article class="violet article">This is just some text</article>
+      <summary class="summarys">
+        In the text above are few examples of how can a SVG element be
+        incorporated in HTML.
+      </summary>
     </div>
   </body>
 </html>
