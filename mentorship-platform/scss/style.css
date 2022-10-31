@@ -95,6 +95,12 @@
   justify-content: space-between;
 }
 
+.flex-container--footer {
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
 .summary {
   padding: 5px 15px;
 }
@@ -130,7 +136,8 @@
   padding: 20px 10px;
 }
 
-.header a, button {
+.header a,
+button {
   float: left;
   color: black;
   text-align: center;
@@ -141,7 +148,8 @@
   border-radius: 4px;
 }
 
-.header a:hover, button:hover {
+.header a:hover,
+button:hover {
   background-color: dodgerblue;
   color: white;
 }
@@ -151,7 +159,51 @@
 }
 
 .header--right {
+  padding-right: 50px;
   float: right;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.footer {
+  padding: 50px 0;
+  background-color: rgba(52, 205, 205, 0.2);
+}
+
+.footer--center {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+  vertical-align: middle;
 }
 
 @media (max-width: 786px) {
@@ -160,7 +212,8 @@
   }
 }
 @media screen and (max-width: 800px) {
-  .header a, button {
+  .header a,
+.header button {
     float: none;
     display: block;
     text-align: left;
@@ -170,5 +223,16 @@
   }
   .header--left {
     float: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .footer--left a {
+    width: 100%;
+  }
+  .footer--center a {
+    width: 100%;
+  }
+  .footer--right span {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

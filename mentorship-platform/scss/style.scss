@@ -96,40 +96,46 @@ $background-color: rgba(52, 205, 205, 0.2);
 .button--rounded--very {
   border-radius: 15px;
 }
- 
+
 .flex-container {
-    padding: 10px 50px;
-    display: inline-block;
-    justify-content: space-between;
+  padding: 10px 50px;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.flex-container--footer {
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .summary {
-    padding: 5px 15px;
+  padding: 5px 15px;
 }
 
 .input {
-    margin: 5px;
-    padding: 5px;
+  margin: 5px;
+  padding: 5px;
 }
 
 .input--normal {
-    border-radius: 0px;
+  border-radius: 0px;
 }
 
 .input--focus:focus {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
-.input--default{
-    border-radius: 0px;
+.input--default {
+  border-radius: 0px;
 }
 
 .input--little_rounded {
-    border-radius: 7px;
+  border-radius: 7px;
 }
 
 .input--very_rounded {
-    border-radius: 15px;
+  border-radius: 15px;
 }
 
 .header {
@@ -138,7 +144,8 @@ $background-color: rgba(52, 205, 205, 0.2);
   padding: 20px 10px;
 }
 
-.header a, button {
+.header a,
+button {
   float: left;
   color: black;
   text-align: center;
@@ -149,7 +156,8 @@ $background-color: rgba(52, 205, 205, 0.2);
   border-radius: 4px;
 }
 
-.header a:hover, button:hover {
+.header a:hover,
+button:hover {
   background-color: dodgerblue;
   color: white;
 }
@@ -157,21 +165,64 @@ $background-color: rgba(52, 205, 205, 0.2);
 .header--left {
   float: left;
 }
+
 .header--right {
+  padding-right: 50px;
   float: right;
 }
 
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
 
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
 
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.footer {
+  padding: 50px 0;
+  background-color: $background-color;
+}
+
+.footer--center {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+  vertical-align: middle;
+}
 
 @media (max-width: 786px) {
-    button {
-        width: 29%;
-    }
+  button {
+    width: 29%;
+  }
 }
 
 @media screen and (max-width: 800px) {
-  .header a, button {
+  .header a,
+  .header button {
     float: none;
     display: block;
     text-align: left;
@@ -181,6 +232,20 @@ $background-color: rgba(52, 205, 205, 0.2);
   }
 
   .header--left {
-    float: none
+    float: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer--left a {
+    width: 100%;
+  }
+
+  .footer--center a {
+    width: 100%;
+  }
+
+  .footer--right span {
+    width: 100%;
   }
 }
