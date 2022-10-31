@@ -132,8 +132,55 @@ $background-color: rgba(52, 205, 205, 0.2);
     border-radius: 15px;
 }
 
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a, button {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a:hover, button:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header--left {
+  float: left;
+}
+.header--right {
+  float: right;
+}
+
+
+
+
 @media (max-width: 786px) {
     button {
         width: 29%;
     }
+}
+
+@media screen and (max-width: 800px) {
+  .header a, button {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header--right {
+    float: none;
+  }
+
+  .header--left {
+    float: none
+  }
 }
