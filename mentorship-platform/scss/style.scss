@@ -19,34 +19,6 @@ $background-color: rgba(52, 205, 205, 0.2);
   background-color: $background-color;
 }
 
-.green {
-  background-color: $green;
-  margin: 16px 0;
-  color: $white;
-}
-
-.lime {
-  background-color: $lime;
-  margin: 16px 0;
-}
-
-.darkblue {
-  background-color: $dark-blue;
-  margin: 16px 0;
-  color: $white;
-}
-
-.blue {
-  background-color: $blue;
-  margin: 16px 0;
-  color: $white;
-}
-
-.violet {
-  background-color: $violet;
-  margin: 16px 0;
-}
-
 .sections {
   margin: 24px 5px;
   padding: 30;
@@ -56,57 +28,80 @@ $background-color: rgba(52, 205, 205, 0.2);
 .article {
   padding: 5px;
   margin: 20px;
+
+  &--green {
+    background-color: $green;
+    color: $white;
+  }
+
+  &--lime {
+    background-color: $lime;
+  }
+
+  &--darkblue {
+    background-color: $dark-blue;
+    color: $white;
+  }
+
+  &--blue {
+    background-color: $blue;
+    color: $white;
+  }
+
+  &--violet {
+    background-color: $violet;;
+  }
 }
 
 .button {
   margin: 5px;
   padding: 5px;
-}
 
-.button--filled {
-  background-color: $background-color;
-}
+  &--filled {
+    background-color: $background-color;
+  }
 
-.button--outlined {
-  border-color: $green;
-}
+  &--outlined {
+    border-color: $green;
+  }
 
-.button--active {
-  background-color: $lime;
-  color: $white;
-}
+  &--active {
+    background-color: $lime;
+    color: $white;
+  }
 
-.button--hover:hover {
-  background-color: $lime;
-  color: $white;
-}
+  &--hover:hover {
+    background-color: $lime;
+    color: $white;
+  }
 
-.button--inactive:disabled {
-  color: $violet;
-}
+  &--inactive:disabled {
+    color: $violet;
+  }
 
-.button--default {
-  border-radius: 0px;
-}
+  &--default {
+    border-radius: 0px;
+  }
 
-.button--rounded--little {
-  border-radius: 5px;
-}
+  &--rounded--little {
+    border-radius: 5px;
+  }
 
-.button--rounded--very {
-  border-radius: 15px;
+  &--rounded--very {
+    border-radius: 15px;
+  }
 }
 
 .flex-container {
   padding: 10px 50px;
   display: inline-block;
-  justify-content: space-between;
-}
-
-.flex-container--footer {
-  padding: 10px 50px;
-  display: flex;
   justify-content: space-around;
+
+  &--footer{
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .summary {
@@ -116,23 +111,24 @@ $background-color: rgba(52, 205, 205, 0.2);
 .input {
   margin: 5px;
   padding: 5px;
+
+  &--normal {
+    border-radius: 0px;
+  }
+
+  &--focus:focus {
+    border-radius: 5px;
+  }
+
+  &--default {
+    border-radius: 0px;
+  }
+
+  &--little_rounded {
+    border-radius: 7px;
+  }
 }
 
-.input--normal {
-  border-radius: 0px;
-}
-
-.input--focus:focus {
-  border-radius: 5px;
-}
-
-.input--default {
-  border-radius: 0px;
-}
-
-.input--little_rounded {
-  border-radius: 7px;
-}
 
 .input--very_rounded {
   border-radius: 15px;
@@ -204,23 +200,28 @@ button:hover {
   padding: 50px 0;
   background-color: $background-color;
 }
+.footer--left {
+  margin: 0 20px;
+  background-color: $background-color;
+}
 
 .footer--center {
   color: black;
   text-align: center;
   text-decoration: none;
-  font-size: 18px;
   border-radius: 4px;
   vertical-align: middle;
 }
 
-@media (max-width: 786px) {
+.footer--right {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 760px) {
   button {
     width: 29%;
   }
-}
 
-@media screen and (max-width: 800px) {
   .header a,
   .header button {
     float: none;
@@ -236,7 +237,7 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   .footer--left a {
     width: 100%;
   }
