@@ -31,3 +31,34 @@
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/*# Footer */
+.footer {
+  display: flex; 
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  flex-direction: row;
+}
+@media (max-width: 580px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+.footer__social-media-icons{
+  scale: 1.5;
+  text-align: center;
+ }
+.footer__nav-items{
+ text-align: center;
+}
+.Copyright{
+  text-align: center;
+}
+@media (min-width: 580px){
+  .footer__social-media-icons{
+   padding-left: 2rem;
+   }
+   .Copyright{
+    padding-right: 2rem;
+  }
+}
