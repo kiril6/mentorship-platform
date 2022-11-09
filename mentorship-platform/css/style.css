@@ -33,29 +33,29 @@
 /*# sourceMappingURL=style.css.map */
 
 /*# Footer */
-.container {
+.footer {
   display: flex; 
   justify-content: space-between;
   flex-wrap: wrap; 
   flex-direction: row;
 }
 @media (max-width: 580px) {
-  .container {
+  .footer {
     flex-direction: column;
   }
 }
-.SocialMediaIcons{
+.footer__social-media-icons{
   scale: 1.5;
   text-align: center;
  }
-.FooterNavItems{
+.footer__nav-items{
  text-align: center;
 }
 .Copyright{
   text-align: center;
 }
 @media (min-width: 580px){
-  .SocialMediaIcons{
+  .footer__social-media-icons{
    padding-left: 2rem;
    }
    .Copyright{
