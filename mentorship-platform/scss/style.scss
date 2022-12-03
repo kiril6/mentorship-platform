@@ -66,6 +66,9 @@ html {
 .button {
   margin: 5px;
   padding: 5px;
+  outline-style: 1px solid;
+  cursor: pointer;
+  font-size: 0.9rem;
 
   &--filled {
     background-color: $background-color;

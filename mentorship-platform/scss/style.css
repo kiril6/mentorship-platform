@@ -53,6 +53,9 @@ html {
 .button {
   margin: 5px;
   padding: 5px;
+  outline-style: 1px solid;
+  cursor: pointer;
+  font-size: 0.9rem;
 }
 .button--filled {
   background-color: rgba(52, 205, 205, 0.2);
