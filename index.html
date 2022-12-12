@@ -125,9 +125,13 @@
           <span>This is externaly imported svg in html as .png file</span>
         </article>
         <article class="article">
-          <i class="ti ti-brand-tabler">This is SVG element implementd with CDN</i>
+          <i class="ti ti-brand-tabler"
+            >This is SVG element implementd with CDN</i
+          >
         </article>
-        <article class="article article--violet">This is just some text</article>
+        <article class="article article--violet">
+          This is just some text
+        </article>
         <summary class="summary">
           In the text above are few examples of how can a SVG element be
           incorporated in HTML.
@@ -141,9 +145,7 @@
           <div>
             <a href="#" title="Close" class="modal-close">Close</a>
             <h1>Modal Header</h1>
-            <div>
-              Modal text
-            </div>
+            <div>Modal text</div>
           </div>
         </div>
       </section>
@@ -194,6 +196,10 @@
       <p class="go-to-top">
         <a href="#top">Go to top<i class="ti ti-arrow-up"></i></a>
       </p>
+      <div class="banner" id="banner">
+        <button class="banner--close button--banner" onclick="closeBanner()">X</button>
+        <p>Simple banner element</p>
+      </div>
       <footer class="footer">
         <div class="flex-container flex-container--footer">
           <div class="footer--left">
@@ -225,5 +231,11 @@
         </div>
       </footer>
     </div>
+    <script>
+      function closeBanner() {
+        const bannerElement = document.getElementById('banner');
+        bannerElement.parentNode.removeChild(bannerElement);
+      }
+      </script>
   </body>
 </html>
