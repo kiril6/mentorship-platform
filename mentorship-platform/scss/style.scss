@@ -294,6 +294,31 @@ button:hover {
   }
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  left: 50%;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 .banner {
   position: fixed;
   width: 100%;
@@ -311,7 +336,7 @@ button:hover {
     width: 20px;
     text-decoration: none;
   }
-} 
+}
 
 @media screen and (max-width: 760px) {
   button {
