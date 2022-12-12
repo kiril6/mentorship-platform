@@ -110,6 +110,9 @@ html {
 
   &--holder > * {
     margin: 10px 25px;
+  &--banner {
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -291,6 +294,25 @@ button:hover {
     color: black;
   }
 }
+
+.banner {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  bottom: 0px;
+  background-color: $violet;
+  display: inline;
+
+  &--close {
+    font-size: 75%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 20px;
+    text-decoration: none;
+  }
+} 
 
 @media screen and (max-width: 760px) {
   button {

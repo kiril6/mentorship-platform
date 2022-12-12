@@ -86,8 +86,14 @@ html {
   border-radius: 0.5rem;
   text-decoration: none;
 }
+
 .button--holder > * {
   margin: 10px 25px;
+
+.button--banner {
+  margin: 0;
+  padding: 0;
+
 }
 
 .flex-container {
@@ -263,6 +269,24 @@ button:hover {
 }
 .modal-close:hover {
   color: black;
+}
+
+.banner {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  bottom: 0px;
+  background-color: violet;
+  display: inline;
+}
+.banner--close {
+  font-size: 75%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 20px;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 760px) {
