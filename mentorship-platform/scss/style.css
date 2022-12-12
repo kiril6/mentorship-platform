@@ -86,9 +86,14 @@ html {
   border-radius: 0.5rem;
   text-decoration: none;
 }
+
+.button--holder > * {
+  margin: 10px 25px;
+
 .button--banner {
   margin: 0;
   padding: 0;
+
 }
 
 .flex-container {

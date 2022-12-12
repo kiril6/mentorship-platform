@@ -59,7 +59,7 @@ html {
   }
 
   &--violet {
-    background-color: $violet;;
+    background-color: $violet;
   }
 }
 
@@ -107,6 +107,9 @@ html {
     border-radius: 0.5rem;
     text-decoration: none;
   }
+
+  &--holder > * {
+    margin: 10px 25px;
   &--banner {
     margin: 0;
     padding: 0;
@@ -118,7 +121,7 @@ html {
   display: inline-block;
   justify-content: space-around;
 
-  &--footer{
+  &--footer {
     padding: 10px 50px;
     display: flex;
     justify-content: space-between;
@@ -149,7 +152,6 @@ html {
     border-radius: 7px;
   }
 }
-
 
 .input--very_rounded {
   border-radius: 15px;
@@ -244,7 +246,6 @@ button:hover {
   align-items: center;
   height: 10vh;
 }
-
 
 .modal-window {
   position: fixed;
