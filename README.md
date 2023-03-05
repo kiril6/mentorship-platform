@@ -1,11 +1,3 @@
-# mentorship-platform
+# dom-exercises
 ## Project rules (setup)
-- Css Architecture BEM = https://getbem.com/introduction/
-- Icon package = https://tabler-icons.io/
-- Responsivness = Mobile first 
-- Css preprocesor = SASS
-- Css framework = none
-- Javascript = Native
-- Jquery = No
-- Responsivness = css flexbox
-- live access = https://igorpavlovski84.github.io/mentorship-platform/
+- For each task create new html page (the commits should be .html files only, write inner js in html )
