@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #bottom-message {
+        position: fixed;
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(120, 46, 190, 0.819);
+        color: rgba(51, 49, 49, 0.83);
+        text-align: center;
+      }
+    </style>
+    <title>task 8</title>
+  </head>
+  <body>
+    <br />
+    <br /><br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="bottom-message">You reached the bottom of the page</div>
+    <script>
+      window.onscroll = function () {
+        let btmpage = document.getElementById("bottom-message");
+        let totalPageHeight = document.body.scrollHeight;
+        let scrollPoint = window.scrollY + window.innerHeight;
+
+        if (scrollPoint >= totalPageHeight) {
+          btmpage.style.display = "block";
+        } else {
+          btmpage.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
