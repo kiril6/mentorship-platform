@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task 11</title>
+  </head>
+  <body>
+    <h1>Enter your notes:</h1>
+    <input class="input" placeholder="note..." type="text" />
+    <button class="btn" type="submit">Add item</button>
+    <div class="listHolder">
+      <ul class="list">
+        <li>MacBook</li>
+      </ul>
+    </div>
+    <script>
+      const divList = document.querySelector(".listHolder");
+      const inpt = document.querySelector(".input");
+      const addBtn = document.querySelector(".btn");
+
+      addBtn.addEventListener("click", () => {
+        const ul = divList.querySelector(".list");
+        const li = document.createElement("li");
+        li.innerHTML = inpt.value;
+        inpt.value = "";
+        ul.appendChild(li);
+      });
+
+      /*function addItem() {
+        let li = document.createElement("li");
+        li.append(document.createTextNode(input.value));
+        ul.appendClild(li);
+        input.value = "";
+      }*/
+    </script>
+  </body>
+</html>
