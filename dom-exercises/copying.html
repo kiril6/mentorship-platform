@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task 5</title>
+    <style>
+      #copy-text {
+        margin: 16px 0;
+        font-size: 12px;
+        color: rgba(77, 73, 73, 0.764);
+        border: 2px solid;
+        border-radius: 2px;
+        width: 100px;
+        text-align: center;
+      }
+      .text {
+        font-size: 16px;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="text">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+      voluptatum at deserunt corrupti quaerat, animi inventore nostrum magni
+      architecto, nisi ullam suscipit similique sapiente harum enim quo tenetur
+      numquam sit?
+    </p>
+    <p id="copy-text" class="hidden">Text copied</p>
+    <script>
+      const text = document.querySelector(".text");
+      const msg = document.getElementById("copy-text");
+      text.addEventListener("copy", () => {
+        setTimeout(() => {
+          alert("Text copied");
+        }, 500);
+        /* setTimeout(() => {
+          msg.classList.add("hidden");
+        }, 600);
+        setTimeout(() => {
+          msg.classList.remove("hidden");
+        }, 800);*/
+      });
+    </script>
+  </body>
+</html>
