@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task 8</title>
+    <style>
+      #paragraph span {
+        background-color: yellow;
+      }
+
+      div {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <h2>Highlight Search Result</h2>
+      <form id="searchBar" name="searchBar">
+        <input name="search" id="search" type="text" size="25" maxlength="25" />
+        <button
+          name="search_button"
+          type="button"
+          value="Search"
+          onClick="findAndHighlight()"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div id="paragraph">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolore
+        necessitatibus id, eaque quo sapiente totam tempora assumenda impedit
+        cupiditate fuga sit dicta obcaecati aperiam similique nemo voluptate
+        eveniet aspernatur?Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Culpa iste natus quidem aperiam. Sed, esse? Voluptas, maxime aut
+        quas dolorem odit doloremque facere eius culpa dolorum eos molestiae
+        incidunt. Inventore?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
+        laboriosam rerum velit consequatur! Enim optio maiores, earum, et, alias
+        aperiam sed deserunt corporis repellendus aliquam at vitae pariatur iste
+        facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        voluptatem voluptatibus, consequatur officiis pariatur eius iusto, dicta
+        natus ea quae fugiat cupiditate! Fugit, excepturi accusamus repellat
+        omnis velit laborum esse?
+      </p>
+    </div>
+
+    <script>
+      function findAndHighlight() {
+        let text = document.getElementById("search").value;
+        let search = new RegExp("(\\b" + text + "\\b)", "gim");
+        let e = document.getElementById("paragraph").innerHTML;
+        let enew = e.replace(/(<span>|<\/span>)/gim, "");
+        document.getElementById("paragraph").innerHTML = enew;
+        let newe = enew.replace(search, "<span>$1</span>");
+        document.getElementById("paragraph").innerHTML = newe;
+      }
+    </script>
+  </body>
+</html>
