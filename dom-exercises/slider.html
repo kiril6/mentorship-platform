@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task 10</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Verdana, sans-serif;
+      }
+      .slides {
+        display: none;
+      }
+      img {
+        justify-self: center;
+        height: 500px;
+        width: 800px;
+      }
+      .slideshow {
+        position: relative;
+        margin-left: 340px;
+        margin-right: 180px;
+      }
+
+      .out {
+        -webkit-animation-name: out;
+        -webkit-animation-duration: 1.5s;
+        animation-name: out;
+        animation-duration: 1.5s;
+      }
+
+      @-webkit-keyframes out {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes out {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @media only screen and (max-width: 300px) {
+        .text {
+          font-size: 11px;
+        }
+      }
+      .bullets {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active {
+        background-color: #717171;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slideshow">
+      <div class="slide out">
+        <img
+          src="https://images.unsplash.com/photo-1605101100278-5d1deb2b6498?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          alt="Amsterdam"
+        />
+      </div>
+      <div class="slide out">
+        <img
+          src="https://images.unsplash.com/photo-1519923041107-e4dc8d9193da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          alt="Vienna"
+        />
+      </div>
+
+      <div class="slide out">
+        <img
+          src="https://images.unsplash.com/photo-1576085545437-4a3a6f7833cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          alt="Paris"
+        />
+      </div>
+      <div class="slide out">
+        <img
+          src="https://images.unsplash.com/photo-1570135460231-4407ce9488b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          alt="Madrid"
+        />
+      </div>
+    </div>
+    <br />
+    <div style="text-align: center">
+      <span class="bullets"></span>
+      <span class="bullets"></span>
+      <span class="bullets"></span>
+      <span class="bullets"></span>
+    </div>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        let slideshows = document.getElementsByClassName("slide");
+        let bullets = document.getElementsByClassName("bullets");
+        for (let i = 0; i < slideshows.length; i++) {
+          slideshows[i].style.display = "none";
+        }
+
+        slideIndex++;
+        if (slideIndex > slideshows.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < bullets.length; i++) {
+          bullets[i].className = bullets[i].className.replace("active", "");
+        }
+        slideshows[slideIndex - 1].style.display = "block";
+        bullets[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 5000);
+      }
+    </script>
+  </body>
+</html>
