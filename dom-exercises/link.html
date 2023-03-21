@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task 5</title>
+  </head>
+  <body>
+    <div className="container">
+      <a id="link" onclick="redirect()">Read JS docs here</a>
+      <button onClick="redirect()">Leave this page</button>
+    </div>
+    <script>
+      function redirect() {
+        confirm("Press OK to continue.");
+        let url = "https://legacy.reactjs.org/docs/getting-started.html";
+        window.location.assign(url);
+      }
+    </script>
+  </body>
+</html>
