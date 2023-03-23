@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      p {
+        color: rgba(21, 20, 20, 0.468);
+        font-size: 20px;
+      }
+      p.clicked {
+        color: rgba(179, 159, 34, 0.848);
+        font-size: 30px;
+      }
+    </style>
+    <title>task 1</title>
+  </head>
+  <body>
+    <p class="paragraph">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis,
+      similique. Illum itaque ullam reprehenderit aliquam dolorum quis.
+      Architecto sequi sit dolor totam quidem molestiae sed ipsum cumque?
+      Perspiciatis, consequatur magni.
+    </p>
+    <button onClick="changeText()">Change text</button>
+    <script>
+      function changeText() {
+        const text = document
+          .querySelector(".paragraph")
+          .classList.add("clicked");
+      }
+    </script>
+  </body>
+</html>

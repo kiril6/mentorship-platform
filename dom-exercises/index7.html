@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      p {
+        font-size: 16px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      span {
+        font-size: 20px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+    </style>
+    <title>task 7</title>
+  </head>
+  <body>
+    <p>Current Date and Time: <span id="date-time"> </span></p>
+    <script>
+      let dataTime = new Date();
+      document.getElementById("date-time").innerHTML = dataTime;
+    </script>
+  </body>
+</html>

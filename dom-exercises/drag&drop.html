@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag&Drop</title>
+    <style>
+      .products_title {
+        margin: 50px 0 20px 0;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .products_list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .product_item {
+        transition: background-color 0.5s;
+        margin-bottom: 10px;
+        padding: 5px;
+
+        text-align: center;
+        border: 2px solid #766a6a77;
+        cursor: move;
+        background-color: #cbaeae9d;
+      }
+
+      .selected {
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="products">
+      <h3 class="products_title">Presale products in April:</h3>
+
+      <ul class="products_list">
+        <li class="product_item" draggable="true">MacBook</li>
+        <li class="product_item" draggable="true">Iphone 13</li>
+        <li class="product_item" draggable="true">Iphone 12 Pro Max</li>
+        <li class="product_item" draggable="true">Samsung Galaxy A2</li>
+        <li class="product_item" draggable="true">Redmi Pro</li>
+      </ul>
+    </section>
+    <script>
+      const productListElement = document.querySelector(".products_list");
+      const productElemets =
+        productListElement.querySelectorAll(".product_item");
+
+      productListElement.addEventListener("dragstart", (e) => {
+        e.target.classList.add("selected");
+      });
+      productListElement.addEventListener("dragend", (e) => {
+        e.target.classList.remove("selected");
+      });
+
+      productListElement.addEventListener("dragover", (e) => {
+        e.preventDefault();
+
+        const activeElement = productListElement.querySelector(".selected");
+
+        const currentElement = e.target;
+
+        const isMoveable =
+          activeElement !== currentElement &&
+          currentElement.classList.contains("product_item");
+
+        if (!isMoveable) {
+          return;
+        }
+
+        const nextElement =
+          currentElement === activeElement.nextElementSibling
+            ? currentElement.nextElementSibling
+            : currentElement;
+
+        productListElement.insertBefore(activeElement, nextElement);
+      });
+    </script>
+  </body>
+</html>

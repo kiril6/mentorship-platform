@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img{
+        display:none;
+        margin-top: 15px;
+      }
+      button{
+        height: 80px;
+        width: 170px;
+        background-color: rgba(33, 91, 136, 0.789);
+        border-radius: 5px;
+
+      }
+      div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <title>task 5</title>
+  </head>
+  <body>
+    <div>
+    <button class="btn" type="submit">Click here!</button>
+    <img class="img" alt="city" src = "https://images.unsplash.com/photo-1673529553057-a7101e6c5c69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"></img>
+  </div>   
+    <script>
+      const btn = document.querySelector(".btn");
+  
+      btn.addEventListener("click", () => {
+        const img = document.querySelector(".img").style.display="block";
+      
+      });
+    </script>
+  </body>
+</html>
