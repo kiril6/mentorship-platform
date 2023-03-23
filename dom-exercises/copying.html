@@ -35,16 +35,14 @@
       const text = document.querySelector(".text");
       const msg = document.getElementById("copy-text");
       text.addEventListener("copy", () => {
-        setTimeout(() => {
-          alert("Text copied");
-        }, 500);
-        /* setTimeout(() => {
+        alert("Text copied");
+      });
+      /*setTimeout(() => {
           msg.classList.add("hidden");
-        }, 600);
+        }, 500);
         setTimeout(() => {
           msg.classList.remove("hidden");
-        }, 800);*/
-      });
+        }, 3000);*/
     </script>
   </body>
 </html>
